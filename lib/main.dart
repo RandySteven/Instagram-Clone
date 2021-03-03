@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:instagram_application/home.dart';
 
 void main(){
   runApp(LoginPage());
@@ -134,7 +135,7 @@ class LoginButton extends StatelessWidget{
         color: Colors.blue[800],
         child: Text('Login'),
         onPressed: (){
-
+          Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>HomePage()));
         },
         textColor: Colors.white,
       ),
